@@ -11,6 +11,7 @@ app.use(cors());
 // app.use(loggerFunc);
 
 let mongodbString = 'mongodb+srv://ranjithsamuelking:Samking123@cluster0.gp8dend.mongodb.net/test?retryWrites=true&w=majority';
+// mongodb+srv://ranjithsamuelking:Samking123@cluster0.gp8dend.mongodb.net/test?retryWrites=true&w=majority
 
 
 mongoose.set("strictQuery",false);

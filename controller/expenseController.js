@@ -147,7 +147,7 @@ exports.getExpenses = async (req,res,next) => {
         }
         else{
         try{
-            const deleteelement = data[0    ];
+            const deleteelement = data[0];
             console.log(deleteelement);
             await deleteelement.remove();
             // await Expenses.deleteOne({_id:id});

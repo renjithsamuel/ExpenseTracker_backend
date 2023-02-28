@@ -2,23 +2,19 @@ const mongoose = require('mongoose');
 
 
 const userSchema = new mongoose.Schema({
-    username:{
-        type:String,
-        required : false
+    username : {
+        type: String,
+        required: [true, 'Please enter a username']
     },
-    budget:{
+    password : {
+        type: String,
+        required: [true, 'Please enter a password']
+    },
+    amount:{
         type:Number,
         required : [true , 'please add your budget']
-    },
-    createdAt : {
-        type: Date,
-        default: Date.now
-    },
-    updatedAt : {
-        type: Date,
-        default: Date.now
     }
-})
+});
 
 
-module.exports = mongoose.model('users',userSchema);
+module.exports = mongoose.model('userSchemas',userSchema);

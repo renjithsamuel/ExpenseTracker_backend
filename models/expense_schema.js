@@ -13,7 +13,18 @@ const ExpenseSchema = new mongoose.Schema({
     },
     desc : {
         type : String
+    },
+    date: {
+        type: Date,
+        default : new Date()
+    },
+    user : {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'userSchemas',
+        required: true
     }
+
+
 });
 
 

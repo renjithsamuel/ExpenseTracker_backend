@@ -46,7 +46,7 @@ app.get('/api/v1/health',(req,res)=>{
     let message = {message : "Its working perfectly",status: "success"};
     res.status(200).json(message);
 });
-let port = 80;
+let port = process.env.PORT || 3000;
 app.listen(port,()=>{
     console.log(`Server started at ${port}`);
 })

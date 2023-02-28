@@ -10,7 +10,8 @@ app.use(helmet());
 app.use(cors());
 // app.use(loggerFunc);
 
-let mongodbString = 'mongodb://localhost:27017/ExpenseTracker';
+let mongodbString = 'mongodb+srv://ranjithsamuelking:Samking123@cluster0.gp8dend.mongodb.net/test?retryWrites=true&w=majority';
+
 
 mongoose.set("strictQuery",false);
 mongoose.connect(mongodbString).then(()=>console.log('connected!!'));
